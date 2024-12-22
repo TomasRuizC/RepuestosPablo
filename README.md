@@ -3,7 +3,7 @@
 Template with the following:
 
 - React 19.0.0
-- TypeScript 5.6.2
+- TypeScript 5.6.3
 - Vite 6.0.3
 - Tailwindcss 3.4.17
 - Eslint 9.17.0
