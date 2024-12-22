@@ -2,7 +2,7 @@
 
 Template with the following:
 
-- React 19.0.2
+- React 19.0.0
 - TypeScript 5.6.2
 - Vite 6.0.3
 - Tailwindcss 3.4.17
