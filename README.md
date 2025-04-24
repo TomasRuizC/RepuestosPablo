@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite + Tailwind CSS + Prettier + ESLint
 
 Template with the following:
@@ -59,3 +60,6 @@ export default tseslint.config({
   },
 });
 ```
+=======
+# RepuestosPablo
+>>>>>>> 563f8659a9db069d98d0d4f26a280c8b702f1b8e
