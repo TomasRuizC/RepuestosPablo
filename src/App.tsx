@@ -1,16 +1,30 @@
-import viteLogo from '/vite.svg';
+// src/App.tsx
+import { Navigate, Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import SearchSection from './components/SearchSection';
+import Catalog from './pages/Catalog.tsx';
+import Home from './pages/Home';
+import ProductDetail from './pages/ProductDetail';
 
-function App() {
+export default function App() {
   return (
-    <div className="flex justify-center items-center gap-5 flex-col min-h-screen">
-      <div className="flex justify-center">
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-      </div>
-      <h1 className="text-4xl">😇</h1>
+    <div className="flex flex-col h-screen font-body">
+      <Header />
+
+      {/* Barra de búsqueda debajo del header */}
+      <SearchSection />
+
+      <main className="flex-grow overflow-auto bg-neutralLight">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/catalogo" element={<Catalog />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </main>
+
+      <Footer />
     </div>
   );
 }
-
-export default App;
